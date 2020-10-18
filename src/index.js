@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import {BrowserRouter} from 'react-router-dom';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import "./project.css"
+//import Todo from './Todo';
+//import Keep from './Keep';
+//import "./keep.css";
+//import "./todo.css";
+//import "./mini.css"
+//import "./index.css"
+//import Context from './Context';
+//import PokemonApi from './PokemonApi';
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+        <BrowserRouter>
+                <App/>
+        </BrowserRouter>,
+        document.getElementById('root')
+    );
